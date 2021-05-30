@@ -1,0 +1,60 @@
+{
+  "name": "semantic-release-fail-on-major-bump",
+  "version": "0.0.0",
+  "description": "Semantic release plugin that prevents publishing major version bumps",
+  "keywords": [
+    "semantic-release",
+    "plugin",
+    "ci"
+  ],
+  "homepage": "https://github.com/evelynhathaway/semantic-release-fail-on-major-bump#readme",
+  "bugs": {
+    "url": "https://github.com/evelynhathaway/semantic-release-fail-on-major-bump/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evelynhathaway/semantic-release-fail-on-major-bump.git"
+  },
+  "license": "MIT",
+  "author": "Evelyn Hathaway <npm@evelyn.dev> (https://evelyn.dev)",
+  "sideEffects": false,
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "/lib"
+  },
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "lint": "eslint ./",
+    "prepare": "husky install"
+  },
+  "commitlint": {
+    "extends": "./node_modules/conventional-changelog-evelyn/commitlint.config.js"
+  },
+  "lint-staged": {
+    "**/package.json": "sort-package-json",
+    "./": "eslint --fix"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "commitlint": "^12.1.4",
+    "conventional-changelog-evelyn": "^1.3.1",
+    "eslint": "^7.27.0",
+    "eslint-plugin-evelyn": "^6.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-regexp": "^0.11.0",
+    "eslint-plugin-unicorn": "^32.0.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "semantic-release": "^17.4.3",
+    "sort-package-json": "^1.50.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
