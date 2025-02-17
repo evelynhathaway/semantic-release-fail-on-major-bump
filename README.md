@@ -60,6 +60,8 @@ Make a either a `Breaking:` or non-breaking typed commit and then see if the err
 a dummy dry-run release.
 
 ```bash
+npm link
+npm link semantic-release-fail-on-major-bump
 npm run test-release
 ```
 
