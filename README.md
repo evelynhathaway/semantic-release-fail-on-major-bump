@@ -32,7 +32,9 @@ In your [**semantic-release** configuration file](https://github.com/semantic-re
 {
   "plugins": [
     [
+      // Add this line
       "semantic-release-fail-on-major-bump",
+      // Example semantic-release config below...
       "@semantic-release/commit-analyzer",
       {
         "preset": "angular",
