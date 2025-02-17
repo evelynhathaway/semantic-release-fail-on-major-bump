@@ -24,32 +24,32 @@ npm install --save-dev semantic-release-fail-on-major-bump
 
 ## Usage
 
-In your [**semantic-release** configuration file](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#configuration), add `semantic-release-fail-on-major-bump`.
+In your [**semantic-release** configuration file](https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file), add `semantic-release-fail-on-major-bump`.
 
-**`.releaserc`**
+**`release.config.mjs`**
 
-```json
-{
-  "plugins": [
-    [
-      // Add this line
-      "semantic-release-fail-on-major-bump",
-      // Example semantic-release config below...
-      "@semantic-release/commit-analyzer",
-      {
-        "preset": "angular",
-        "releaseRules": [
-          {"type": "docs", "scope":"README", "release": "patch"},
-          {"type": "refactor", "release": "patch"},
-          {"type": "style", "release": "patch"}
-        ],
-        "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-        }
-      }
-    ]
-  ]
-}
+```js
+export default {
+	plugins: [
+		// Add this line
+		"semantic-release-fail-on-major-bump",
+		// Example semantic-release commit-analyzer config below...
+		[
+			"@semantic-release/commit-analyzer",
+			{
+				"preset": "angular",
+				"releaseRules": [
+					{"type": "docs", "scope": "README", "release": "patch"},
+					{"type": "refactor", "release": "patch"},
+					{"type": "style", "release": "patch"},
+				],
+				"parserOpts": {
+					"noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"],
+				},
+			},
+		],
+	],
+};
 ```
 
 ## Development
