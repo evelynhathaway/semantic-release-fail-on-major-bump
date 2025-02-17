@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.2
+
+**[`v1.0.1...v1.0.2`](https://github.com/evelynhathaway/semantic-release-fail-on-major-bump/compare/v1.0.1...v1.0.2)** - **2025-02-17**
+
+### 📄 Documentation
+
+- Use valid ESM release config as example config, update link to config file documentation [`7f7213c`](https://github.com/evelynhathaway/semantic-release-fail-on-major-bump/commit/7f7213c)
+
 ## v1.0.1
 
 **[`v1.0.0...v1.0.1`](https://github.com/evelynhathaway/semantic-release-fail-on-major-bump/compare/v1.0.0...v1.0.1)** - **2025-02-17**

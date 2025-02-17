@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-fail-on-major-bump",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Semantic release plugin that prevents publishing major version bumps",
   "keywords": [
     "semantic-release",
