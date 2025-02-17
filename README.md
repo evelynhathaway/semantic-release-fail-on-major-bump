@@ -52,6 +52,17 @@ In your [**semantic-release** configuration file](https://github.com/semantic-re
 }
 ```
 
+## Development
+
+### Testing
+
+Make a either a `Breaking:` or non-breaking typed commit and then see if the error was thrown if expected while running
+a dummy dry-run release.
+
+```bash
+npm run test-release
+```
+
 ## License
 
 Copyright Evelyn Hathaway, [MIT License](/LICENSE)
